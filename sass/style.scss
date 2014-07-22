@@ -1,0 +1,231 @@
+/* ==============================================================================================================
+                           This CSS was written in beautiful Sass and then compiled to this hideous looking code. To view the Sass files, please go here: 
+   =========================================================================================================== */
+@import "normalize";
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+display:block;
+}
+body {
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  background: #000;
+  font-size: 16px;
+  color: #222;
+  background-color: #001324;
+  background-image: linear-gradient(45deg,#001324 25%, #090909 25%, #090909 50%, #001324 50%, #001324 75%, #090909 75%, #090909);
+  background-size: 150px 150px;
+}
+a{
+  text-decoration: none;
+  color: #00a99d;
+}
+p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  color: #444;
+}
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  background: #f3f3f3;
+  margin: 30px auto;
+  padding-bottom: 5px;
+}
+.mainDetails {
+  padding: 25px 35px;
+  border-bottom: 5px solid #feae22;
+}
+.headshot {
+  width: 17%;
+  float: left;
+  margin-right: 30px;
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+.details {
+  float: left;
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    margin: 0 0 -6px 0;
+  }
+  h2 {
+    font-size: 2em;
+    line-height: 0.9em;
+    margin: 0 0 0 2px;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+  }
+  h3{
+    margin: 0;
+  }
+  ul {
+    list-style-type: none;
+    position: relative;
+    left: -40px;
+    margin: 0;
+  }
+   li {
+    display: inline-block;
+    margin-right: 4%;
+    a:hover{
+      color: #feae22;
+    }
+  }
+  svg {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    top: 5px;
+    fill:#00a99d;
+    &:hover{
+      fill: #feae22;
+    }
+  }
+}
+
+.mainArea {
+  padding: 0 40px;
+  margin-bottom: 60px;
+  article {
+    clear: both;
+  }
+}
+
+section {
+  border-top: 1px solid #dedede;
+  padding: 20px 0 0;
+  clear: both;
+  &:first-child {
+    border-top: 0;
+  }
+  &:last-child {
+    padding: 20px 0 10px;
+  }
+}
+
+.sectionTitle {
+  float: left;
+  width: 25%;
+  h2 {
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.5em;
+    color: #00a99d;
+  }
+}
+.sectionContent {
+  float: right;
+  width: 72.5%;
+  h3 {
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: -2px;
+  }
+  h4{
+    margin: 0;
+  }
+}
+
+.subDetails {
+  font-size: 0.8em;
+  font-style: italic;
+  margin-bottom: 3px;
+}
+.keySkills {
+  position: relative;
+  list-style-type: none;
+  margin: 21px 0;
+  padding: 0;
+  font-size: 1em;
+  color: #444;
+  li {
+    margin-bottom: 30px;
+    height: 30px;
+    background: #E4E7EB;
+  }
+  .expand {
+  height: 30px;
+  position: absolute;
+  }
+  .sixty {
+  width: 60%;
+  animation: sixty 2s ease-out backwards 6s;
+  background: #00a99d;
+  }
+   .ninety {
+  width: 90%;
+  animation: ninety 2s ease-out backwards 6s;
+  background: #00a99d;
+  }
+  .eightyfive {
+  width: 85%;
+  animation: eightyfive 2s ease-out backwards 6s;
+  background: #00a99d;
+  }
+  .eighty {
+  width: 80%;
+  animation: eighty 2s ease-out backwards 6s;
+  background: #00a99d;
+  }
+  .ninetyfive {
+  width: 95%;
+  animation: ninetyfive 2s ease-out backwards 6s;
+  background: #00a99d;
+  }
+  .seventyfive {
+  width: 75%;
+  animation: seventyfive 2s ease-out backwards 6s;
+  background: #00a99d;
+  }
+  em{
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 8px;
+  top: 4px;
+  }
+}
+
+@keyframes ninetyfive {
+  0% { width:0;}
+  100% { width:95%;}
+}
+@keyframes eightyfive {
+  0% { width:0;}
+  100% { width:85%;}
+}
+@keyframes sixty {
+  0% { width:0;}
+  100% { width:60%;}
+}
+@keyframes seventyfive {
+  0% { width:0;}
+  100% { width:75%;}
+}
+@keyframes ninety {
+  0% { width:0;}
+  100% { width:90%;}
+}
+@keyframes eightyfive {
+  0% { width:0;}
+  100% { width:85%;}
+}
+@keyframes eighty {
+  0% { width:0;}
+  100% { width:80%;}
+}
+@keyframes ninetyfive {
+  0% { width:0;}
+  100% { width:95%;}
+}
+@keyframes seventyfive {
+  0% { width:0;}
+  100% { width:75%;}
+}
+
+@import "media-queries";
