@@ -1,7 +1,12 @@
 /* ==============================================================================================================
-                           This CSS was written in beautiful Sass and then compiled to this hideous looking code. To view the Sass files, please go here: 
+   This CSS was written in beautiful Sass and then compiled to this hideous looking code. To view the purrdy Sass files, please go here: https://github.com/MandyMadeThis/Resume-July14/tree/master/sass 
    =========================================================================================================== */
 @import "normalize";
+
+$white: #f3f3f3;
+$teal: #00a99d;
+$orange: #feae22;
+$navy: #001324;
 
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
 display:block;
@@ -10,31 +15,35 @@ body {
   font-family: 'Lato', helvetica, arial, sans-serif;
   background: #000;
   font-size: 16px;
-  color: #222;
-  background-color: #001324;
-  background-image: linear-gradient(45deg,#001324 25%, #090909 25%, #090909 50%, #001324 50%, #001324 75%, #090909 75%, #090909);
+  color: $navy;
+  background-color: $navy;
+  background-image: linear-gradient(45deg,$navy 25%, #090909 25%, #090909 50%, $navy 50%, $navy 75%, #090909 75%, #090909);
   background-size: 150px 150px;
 }
 a{
   text-decoration: none;
-  color: #00a99d;
+  color: $teal;
 }
 p {
   font-size: 1em;
   line-height: 1.4em;
   margin-bottom: 20px;
-  color: #444;
 }
+
+h1,h2,h3,h4,h5,h6{
+   font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
 .wrapper {
   width: 90%;
   max-width: 800px;
-  background: #f3f3f3;
+  background: $white;
   margin: 30px auto;
   padding-bottom: 5px;
 }
 .mainDetails {
   padding: 25px 35px;
-  border-bottom: 5px solid #feae22;
+  border-bottom: 5px solid $orange;
 }
 .headshot {
   width: 17%;
@@ -51,14 +60,12 @@ p {
   h1 {
     font-size: 2.5em;
     font-weight: 700;
-    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
     margin: 0 0 -6px 0;
   }
   h2 {
     font-size: 2em;
     line-height: 0.9em;
     margin: 0 0 0 2px;
-    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
   }
   h3{
     margin: 0;
@@ -73,7 +80,7 @@ p {
     display: inline-block;
     margin-right: 4%;
     a:hover{
-      color: #feae22;
+      color: $orange;
     }
   }
   svg {
@@ -81,9 +88,9 @@ p {
     height: 32px;
     position: relative;
     top: 5px;
-    fill:#00a99d;
+    fill:$teal;
     &:hover{
-      fill: #feae22;
+      fill: $orange;
     }
   }
 }
@@ -95,7 +102,6 @@ p {
     clear: both;
   }
 }
-
 section {
   border-top: 1px solid #dedede;
   padding: 20px 0 0;
@@ -112,30 +118,55 @@ section {
   float: left;
   width: 25%;
   h2 {
-    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
     font-style: italic;
     font-size: 1.5em;
-    color: #00a99d;
+    color: $teal;
   }
 }
 .sectionContent {
   float: right;
   width: 72.5%;
   h3 {
-    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
     font-size: 1.5em;
     margin-bottom: -2px;
   }
   h4{
     margin: 0;
   }
+  ul.checked-square,ul.checked, ul.icons {
+      list-style: none;
+      padding-left: 20px;
+      li {
+          margin-top: 15px;
+      }
+      i[class^="fa"] {
+        color: $orange;
+          margin-right: 8px;
+      }
+  }
 }
+
+ul.checked-square li:before, ul.checked li:before {
+  font-family: FontAwesome;
+  color: $orange;
+  margin-right: 8px;
+}
+
+ul.checked-square li:before {
+  content: "\f046";
+}
+
+ul.checked li:before {
+  content: "\f00c"
+}
+
 
 .subDetails {
   font-size: 0.8em;
   font-style: italic;
   margin-bottom: 3px;
 }
+
 .keySkills {
   position: relative;
   list-style-type: none;
@@ -148,40 +179,6 @@ section {
     height: 30px;
     background: #E4E7EB;
   }
-  .expand {
-  height: 30px;
-  position: absolute;
-  }
-  .sixty {
-  width: 60%;
-  animation: sixty 2s ease-out backwards 6s;
-  background: #00a99d;
-  }
-   .ninety {
-  width: 90%;
-  animation: ninety 2s ease-out backwards 6s;
-  background: #00a99d;
-  }
-  .eightyfive {
-  width: 85%;
-  animation: eightyfive 2s ease-out backwards 6s;
-  background: #00a99d;
-  }
-  .eighty {
-  width: 80%;
-  animation: eighty 2s ease-out backwards 6s;
-  background: #00a99d;
-  }
-  .ninetyfive {
-  width: 95%;
-  animation: ninetyfive 2s ease-out backwards 6s;
-  background: #00a99d;
-  }
-  .seventyfive {
-  width: 75%;
-  animation: seventyfive 2s ease-out backwards 6s;
-  background: #00a99d;
-  }
   em{
   font-size: 12px;
   text-transform: uppercase;
@@ -189,23 +186,55 @@ section {
   padding-left: 8px;
   top: 4px;
   }
+  .expand {
+  height: 30px;
+  position: absolute;
+  }
+  .ninetyfive {
+  width: 95%;
+  animation: ninetyfive 2s ease-out backwards 6s;
+  background: $teal;
+  }
+   .ninety {
+  width: 90%;
+  animation: ninety 2s ease-out backwards 6s;
+  background: $teal;
+  }
+  .eightyfive {
+  width: 85%;
+  animation: eightyfive 2s ease-out backwards 6s;
+  background: $teal;
+  }
+  .eighty {
+  width: 80%;
+  animation: eighty 2s ease-out backwards 6s;
+  background: $teal;
+  }
+  .seventyfive {
+  width: 75%;
+  animation: seventyfive 2s ease-out backwards 6s;
+  background: $teal;
+  }
+  .seventy {
+  width: 70%;
+  animation: seventyfive 2s ease-out backwards 6s;
+  background: $teal;
+  }
+  .sixtyfive {
+  width: 65%;
+  animation: sixtyfive 2s ease-out backwards 6s;
+  background: $teal;
+  }
+  .sixty {
+  width: 60%;
+  animation: sixty 2s ease-out backwards 6s;
+  background: $teal;
+  }
 }
 
 @keyframes ninetyfive {
   0% { width:0;}
   100% { width:95%;}
-}
-@keyframes eightyfive {
-  0% { width:0;}
-  100% { width:85%;}
-}
-@keyframes sixty {
-  0% { width:0;}
-  100% { width:60%;}
-}
-@keyframes seventyfive {
-  0% { width:0;}
-  100% { width:75%;}
 }
 @keyframes ninety {
   0% { width:0;}
@@ -219,13 +248,21 @@ section {
   0% { width:0;}
   100% { width:80%;}
 }
-@keyframes ninetyfive {
-  0% { width:0;}
-  100% { width:95%;}
-}
 @keyframes seventyfive {
   0% { width:0;}
   100% { width:75%;}
+}
+@keyframes seventy {
+  0% { width:0;}
+  100% { width:70%;}
+}
+@keyframes sixtyfive {
+  0% { width:0;}
+  100% { width:65%;}
+}
+@keyframes sixty {
+  0% { width:0;}
+  100% { width:60%;}
 }
 
 @import "media-queries";

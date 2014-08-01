@@ -1,31 +1,14 @@
-@media (max-width: 480px) {
-  .mainDetails {
-    padding: 15px 15px;
-  }
-  .headshot img {
-    display: none;
-  }
-  .mainArea {
-  padding: 0 10px;
-  margin-bottom: 30px;
-  }
-  
-  section {
-    padding: 15px 0 0;
-  }
-  .sectionTitle h2{
-    font-size: 1em;
-    position: relative;
-    top: 12px;
-  }
-  
-  
-  .details h1 {
-    line-height: .8em;
-    margin-bottom: 4px;
-  }
-}
-@media (min-width: 481px) and (max-width: 600px) {
+@media (max-width: 679px) {
+   .mainDetails {
+      padding: 15px 15px;
+    }
+    .headshot img {
+      display: none;
+    }
+    .mainArea {
+    padding: 0 10px;
+    margin-bottom: 30px;
+    }
   .wrapper {
     width: 95%;
     margin: 10px auto;
@@ -53,7 +36,7 @@
   }
   
 }
-@media (min-width: 601px) and (max-width: 800px) {
+@media (min-width: 680px) and (max-width: 800px) {
   
   .headshot {
       display: none;
@@ -62,7 +45,6 @@
 
   
 @media print {
-
 .wrapper {
 width: 100%;
 }
