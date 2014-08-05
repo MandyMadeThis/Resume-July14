@@ -5,9 +5,6 @@ $teal: #00a99d;
 $orange: #feae22;
 $navy: #001324;
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-display:block;
-}
 body {
   font-family: 'Lato', helvetica, arial, sans-serif;
   background: #000;
@@ -39,7 +36,7 @@ h1,h2,h3,h4,h5,h6{
   padding-bottom: 5px;
 }
 .mainDetails {
-  padding: 25px 35px;
+  padding: 15px 40px;
   border-bottom: 5px solid $orange;
 }
 .headshot {
@@ -67,6 +64,10 @@ h1,h2,h3,h4,h5,h6{
   h3{
     margin: 0;
   }
+  .fa-2x{
+    font-size: 1.5em;
+  }
+
   ul {
     list-style-type: none;
     position: relative;
@@ -81,10 +82,10 @@ h1,h2,h3,h4,h5,h6{
     }
   }
   svg {
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     position: relative;
-    top: 5px;
+    top: 4px;
     fill:$teal;
     &:hover{
       fill: $orange;
